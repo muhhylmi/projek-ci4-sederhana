@@ -1,0 +1,26 @@
+Struktur Folder 
+1. App 
+core dari aplikasi CI
+2.public
+untuk menyimpan file2 yang dapat di share
+3. vendor
+menyimpan dependensi dari ci4
+
+
+Routes
+1. di edit paling bawah
+    segment1 = controller
+    segment2 = methode
+    segment3, dst = data yang ada pada parameter methode
+
+    get url (controller::method)
+    add(controller::method)
+    <> bisa dengan closure 
+    get('url', function(){
+    });
+
+    Manipulasi routing dengan segment 2 parameter
+    get('/Coba/(:any)', Coba::about/$1)
+
+    ini dapat ditimpa untuk mengatasi yang default yaitu segment 1 = controller, segment 2 = methode
+    
